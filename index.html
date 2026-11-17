@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Éclat Pro — Entreprise de nettoyage professionnel</title>
+  <meta name="description" content="Éclat Pro, entreprise de nettoyage pour bureaux, commerces, copropriétés et particuliers. Devis gratuit sous 24 h, équipes formées, produits écologiques.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      document.documentElement.classList.remove('no-js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== Barre d'informations ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <ul class="topbar__list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+33100000000">01 00 00 00 00</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contact@eclatpro.fr">contact@eclatpro.fr</a></li>
+        <li class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Lun – Sam : 7 h – 20 h</li>
+      </ul>
+      <p class="topbar__note hide-sm">Paris &amp; Île-de-France · Devis gratuit sous 24 h</p>
+    </div>
+  </div>
+
+  <!-- ===== En-tête ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="logo" aria-label="Éclat Pro, accueil">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 3l3 9 9 3-9 3-3 10-3-10-9-3 9-3z" fill="currentColor"/></svg>
+        </span>
+        <span class="logo__text">Éclat<span>Pro</span><small>Nettoyage professionnel</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#methode">Méthode</a></li>
+          <li><a href="#pourquoi">Pourquoi nous</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary nav__cta">Devis gratuit</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+33100000000" class="header__phone">
+          <span class="header__phone-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <span><small>Appelez-nous</small>01 00 00 00 00</span>
+        </a>
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Activer le mode sombre">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- ===== Héros ===== -->
+    <section class="hero" id="accueil">
+      <!-- Photo : CDC / Unsplash -->
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2000&q=75" alt="" fetchpriority="high">
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__kicker">Entreprise de propreté depuis 2010</span>
+          <h1>Le nettoyage professionnel qui valorise vos espaces.</h1>
+          <p class="hero__lead">Bureaux, commerces, copropriétés et logements : des équipes formées, un interlocuteur unique et un contrôle qualité à chaque intervention.</p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary btn--lg">Demander un devis gratuit</a>
+            <a href="#services" class="btn btn--light btn--lg">Nos prestations</a>
+          </div>
+          <div class="hero__proof">
+            <div class="hero__rating">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span><strong>4,9/5</strong> sur 320 avis clients</span>
+            </div>
+            <span class="hero__sep" aria-hidden="true"></span>
+            <span><strong>450+</strong> clients réguliers</span>
+          </div>
+        </div>
+
+        <form class="quick-form js-form" novalidate aria-labelledby="quickTitle">
+          <h2 id="quickTitle">Être rappelé gratuitement</h2>
+          <p>Réponse sous 2 h ouvrées, sans engagement.</p>
+          <div class="field">
+            <label for="q-nom">Nom</label>
+            <input id="q-nom" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="q-tel">Téléphone</label>
+            <input id="q-tel" name="tel" type="tel" autocomplete="tel" required pattern="[0-9 +().-]{8,}">
+          </div>
+          <div class="field">
+            <label for="q-type">Type de prestation</label>
+            <select id="q-type" name="type">
+              <option>Bureaux &amp; entreprises</option>
+              <option>Particuliers</option>
+              <option>Copropriétés</option>
+              <option>Vitrerie</option>
+              <option>Fin de chantier</option>
+              <option>Commerces &amp; hôtellerie</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Je souhaite être rappelé</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Engagements ===== -->
+    <section class="pillars" aria-label="Nos engagements">
+      <div class="container pillars__grid">
+        <div class="pillar">
+          <span class="pillar__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22c5-3 8-7 8-12V5l-8-3-8 3v5c0 5 3 9 8 12z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+          <div><strong>Personnel assuré</strong><span>Agents salariés et formés</span></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-10-1 12-5 16-9 17z"/><path d="M4 21c3-5 6-8 10-10"/></svg></span>
+          <div><strong>Produits écologiques</strong><span>Certifiés Ecolabel</span></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><strong>Horaires flexibles</strong><span>Tôt, tard ou le week-end</span></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+          <div><strong>Satisfaction garantie</strong><span>Reprise gratuite sous 48 h</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Nos prestations</span>
+          <h2>Des services de nettoyage complets, pour les professionnels et les particuliers</h2>
+          <p>Chaque prestation est adaptée à vos locaux, à vos horaires et à votre budget, avec un cahier des charges clair.</p>
+        </header>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__media">
+              <!-- Photo : Towfiqu barbhuiya / Unsplash -->
+              <img src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=800&h=560&q=75" alt="Agent nettoyant un bureau avec un spray et un chiffon" loading="lazy" width="800" height="560">
+            </div>
+            <div class="service__body">
+              <h3>Bureaux &amp; entreprises</h3>
+              <p>Entretien quotidien ou hebdomadaire des postes de travail, salles de réunion, sanitaires et espaces de pause.</p>
+              <a href="#contact" class="service__link">En savoir plus <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service__media">
+              <!-- Photo : Vitaly Gariev / Unsplash -->
+              <img src="https://images.unsplash.com/photo-1758273238415-01ec03d9ef27?auto=format&fit=crop&w=800&h=560&q=75" alt="Lavage du sol d'un salon lumineux" loading="lazy" width="800" height="560">
+            </div>
+            <div class="service__body">
+              <h3>Particuliers</h3>
+              <p>Ménage régulier, grand nettoyage ou remise en état. Éligible au crédit d'impôt des services à la personne.</p>
+              <a href="#contact" class="service__link">En savoir plus <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service__media">
+              <!-- Photo : Josue Michel / Unsplash -->
+              <img src="https://images.unsplash.com/photo-1646980241033-cd7abda2ee88?auto=format&fit=crop&w=800&h=560&q=75" alt="Agente montant un escalier avec son matériel de nettoyage" loading="lazy" width="800" height="560">
+            </div>
+            <div class="service__body">
+              <h3>Copropriétés</h3>
+              <p>Parties communes, halls, escaliers, ascenseurs et sortie des conteneurs, selon un planning défini avec le syndic.</p>
+              <a href="#contact" class="service__link">En savoir plus <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service__media">
+              <!-- Photo : Priscilla Du Preez / Unsplash -->
+              <img src="https://images.unsplash.com/photo-1482449609509-eae2a7ea42b7?auto=format&fit=crop&w=800&h=560&q=75" alt="Laveur de vitres sur une nacelle" loading="lazy" width="800" height="560">
+            </div>
+            <div class="service__body">
+              <h3>Vitrerie</h3>
+              <p>Vitres, baies vitrées et façades, y compris en hauteur grâce à la perche à eau pure et à la nacelle.</p>
+              <a href="#contact" class="service__link">En savoir plus <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service__media">
+              <!-- Photo : PuroClean of Fort Worth / Unsplash -->
+              <img src="https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?auto=format&fit=crop&w=800&h=560&q=75" alt="Nettoyage d'un sol avec des gants de protection" loading="lazy" width="800" height="560">
+            </div>
+            <div class="service__body">
+              <h3>Fin de chantier</h3>
+              <p>Remise en état après travaux : poussières fines, traces de peinture, plâtre et résidus de construction.</p>
+              <a href="#contact" class="service__link">En savoir plus <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service__media">
+              <!-- Photo : Ashwini Chaudhary (Monty) / Unsplash -->
+              <img src="https://images.unsplash.com/photo-1580256081112-e49377338b7f?auto=format&fit=crop&w=800&h=560&q=75" alt="Chariot de ménage dans un couloir d'hôtel" loading="lazy" width="800" height="560">
+            </div>
+            <div class="service__body">
+              <h3>Commerces &amp; hôtellerie</h3>
+              <p>Boutiques, hôtels, cabinets médicaux et restaurants : une hygiène irréprochable, hors de vos heures d'ouverture.</p>
+              <a href="#contact" class="service__link">En savoir plus <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À propos ===== -->
+    <section class="section section--alt" id="apropos">
+      <div class="container about">
+        <div class="about__media reveal">
+          <!-- Photo : Nastuh Abootalebi / Unsplash -->
+          <img class="about__img about__img--main" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&h=1050&q=75" alt="Couloir de bureaux propre avec cloisons vitrées" loading="lazy" width="900" height="1050">
+          <!-- Photo : JESHOOTS.COM / Unsplash -->
+          <img class="about__img about__img--small" src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=600&h=600&q=75" alt="Pulvérisateur de produit nettoyant" loading="lazy" width="600" height="600">
+          <div class="about__badge">
+            <strong>15</strong>
+            <span>ans<br>d'expertise</span>
+          </div>
+        </div>
+
+        <div class="about__content reveal">
+          <span class="eyebrow">À propos d'Éclat Pro</span>
+          <h2>Un partenaire de confiance pour l'entretien de vos locaux</h2>
+          <p>Depuis 2010, nous accompagnons entreprises, syndics et particuliers avec une exigence simple : un travail soigné, régulier et contrôlé. Chaque client dispose d'un responsable de secteur dédié, joignable directement.</p>
+          <ul class="checklist">
+            <li>Équipes stables, formées aux protocoles d'hygiène</li>
+            <li>Matériel professionnel et produits fournis</li>
+            <li>Rapport de passage et audit qualité réguliers</li>
+            <li>Contrats sans engagement de durée</li>
+          </ul>
+          <div class="about__actions">
+            <a href="#contact" class="btn btn--primary">Rencontrer un conseiller</a>
+            <div class="about__sign">
+              <span class="avatar" aria-hidden="true">JD</span>
+              <span><strong>Jean Dupont</strong><br><small>Fondateur &amp; gérant</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Chiffres ===== -->
+    <section class="stats" aria-label="Nos chiffres clés">
+      <!-- Photo : Adolfo Félix / Unsplash -->
+      <img class="stats__bg" src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=2000&q=70" alt="" loading="lazy">
+      <div class="container stats__grid">
+        <div class="stat reveal"><strong data-count="15">0</strong><span>années d'expérience</span></div>
+        <div class="stat reveal"><strong data-count="450" data-suffix="+">0</strong><span>clients réguliers</span></div>
+        <div class="stat reveal"><strong data-count="60">0</strong><span>agents qualifiés</span></div>
+        <div class="stat reveal"><strong data-count="98" data-suffix=" %">0</strong><span>de clients satisfaits</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Méthode ===== -->
+    <section class="section" id="methode">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Notre méthode</span>
+          <h2>Un processus simple, de la demande au premier passage</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Prise de contact</h3>
+            <p>Par téléphone ou via le formulaire, vous nous décrivez vos besoins.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Visite &amp; devis</h3>
+            <p>Un conseiller visite vos locaux et vous remet un devis détaillé sous 24 h.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Mise en place</h3>
+            <p>Fréquence, horaires et cahier des charges sont définis ensemble.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">4</span>
+            <h3>Suivi qualité</h3>
+            <p>Votre responsable de secteur contrôle chaque prestation dans la durée.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Pourquoi nous choisir ===== -->
+    <section class="section section--alt" id="pourquoi">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Pourquoi nous choisir</span>
+          <h2>Six bonnes raisons de nous confier vos locaux</h2>
+          <p>Plus qu'un prestataire, un partenaire qui s'engage sur la qualité, la réactivité et la transparence.</p>
+        </header>
+
+        <div class="why">
+          <div class="why__media reveal">
+            <!-- Photo : Katie Pearse / Unsplash -->
+            <img src="https://images.unsplash.com/photo-1713110824336-f78c320dcf8e?auto=format&fit=crop&w=900&h=1100&q=75" alt="Agent d'entretien nettoyant une chaise avec des gants blancs" loading="lazy" width="900" height="1100">
+            <div class="why__card">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <strong>4,9/5</strong>
+              <span>Note moyenne sur 320 avis clients</span>
+            </div>
+          </div>
+
+          <ul class="why__grid">
+            <li class="reason reveal">
+              <span class="reason__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.3c2.1.7 3.5 2.8 3.5 5.7"/></svg></span>
+              <div><h3>Équipes expérimentées</h3><p>Des agents salariés, formés aux techniques professionnelles et aux protocoles d'hygiène.</p></div>
+            </li>
+            <li class="reason reveal">
+              <span class="reason__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+              <div><h3>Interlocuteur unique</h3><p>Un responsable de secteur dédié, joignable directement pour toute demande.</p></div>
+            </li>
+            <li class="reason reveal">
+              <span class="reason__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+              <div><h3>Réactivité</h3><p>Devis sous 24 h et mise en place de la prestation en quelques jours seulement.</p></div>
+            </li>
+            <li class="reason reveal">
+              <span class="reason__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-10-1 12-5 16-9 17z"/><path d="M4 21c3-5 6-8 10-10"/></svg></span>
+              <div><h3>Démarche écoresponsable</h3><p>Produits certifiés Ecolabel, microfibres et faible consommation d'eau.</p></div>
+            </li>
+            <li class="reason reveal">
+              <span class="reason__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+              <div><h3>Contrôle qualité</h3><p>Audits réguliers, rapports de passage et reprise gratuite en cas d'insatisfaction.</p></div>
+            </li>
+            <li class="reason reveal">
+              <span class="reason__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+              <div><h3>Devis clair, sans engagement</h3><p>Un prix détaillé et fixe, des contrats résiliables à tout moment.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Avis ===== -->
+    <section class="section" id="avis">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Témoignages</span>
+          <h2>Ce que disent nos clients</h2>
+        </header>
+        <div class="testimonials">
+          <figure class="testimonial reveal">
+            <svg class="testimonial__quote" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 8H6v8h5c0 4-2 6-5 7v3c6-1 9-5 9-11V8zm15 0h-7v8h5c0 4-2 6-5 7v3c6-1 9-5 9-11V8z"/></svg>
+            <blockquote>Une équipe ponctuelle et discrète. Nos bureaux n'ont jamais été aussi propres et le suivi est irréprochable.</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">SL</span>
+              <span><strong>Sophie L.</strong><small>Directrice d'agence</small></span>
+              <span class="stars" aria-label="5 sur 5">★★★★★</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <svg class="testimonial__quote" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 8H6v8h5c0 4-2 6-5 7v3c6-1 9-5 9-11V8zm15 0h-7v8h5c0 4-2 6-5 7v3c6-1 9-5 9-11V8z"/></svg>
+            <blockquote>Nous leur avons confié l'entretien de notre copropriété il y a trois ans. Les résidents sont ravis.</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">MR</span>
+              <span><strong>Marc R.</strong><small>Président de conseil syndical</small></span>
+              <span class="stars" aria-label="5 sur 5">★★★★★</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <svg class="testimonial__quote" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 8H6v8h5c0 4-2 6-5 7v3c6-1 9-5 9-11V8zm15 0h-7v8h5c0 4-2 6-5 7v3c6-1 9-5 9-11V8z"/></svg>
+            <blockquote>Remise en état impeccable après nos travaux. Réactifs, soigneux, et un devis respecté au centime près.</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">NB</span>
+              <span><strong>Nadia B.</strong><small>Particulière</small></span>
+              <span class="stars" aria-label="5 sur 5">★★★★★</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Bandeau d'appel ===== -->
+    <section class="cta-band">
+      <!-- Photo : Minh Pham / Unsplash -->
+      <img class="cta-band__bg" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=2000&q=70" alt="" loading="lazy">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <h2>Prêt à confier votre propreté à des professionnels ?</h2>
+          <p>Recevez votre devis personnalisé sous 24 h, sans engagement.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Demander un devis</a>
+          <a href="tel:+33100000000" class="btn btn--light btn--lg">01 00 00 00 00</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <header class="section__head section__head--left reveal">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2>Tout savoir sur nos prestations</h2>
+          <p>Vous ne trouvez pas votre réponse ? <a href="#contact">Contactez-nous</a>, un conseiller vous répond rapidement.</p>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item reveal" open>
+            <summary>Dois-je fournir le matériel et les produits ?</summary>
+            <p>Non. Nos équipes arrivent avec l'ensemble du matériel professionnel et des produits nécessaires, sauf demande contraire de votre part.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Quelle est la durée minimale d'engagement ?</summary>
+            <p>Aucune. Nos contrats d'entretien sont sans engagement de durée et résiliables avec un préavis d'un mois.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Que se passe-t-il si je ne suis pas satisfait ?</summary>
+            <p>Signalez-le sous 48 h : nous revenons gratuitement corriger la prestation.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Intervenez-vous en dehors des heures de bureau ?</summary>
+            <p>Oui, tôt le matin, en soirée, le week-end et les jours fériés selon vos besoins.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Les particuliers bénéficient-ils d'un avantage fiscal ?</summary>
+            <p>Oui, en France, le ménage à domicile ouvre droit à un crédit d'impôt de 50 % dans le cadre des services à la personne, selon la réglementation en vigueur.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Demandez votre devis gratuit</h2>
+          <p>Décrivez votre besoin : un conseiller vous recontacte sous 24 h ouvrées pour organiser une visite.</p>
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+              <span><small>Téléphone</small><a href="tel:+33100000000">01 00 00 00 00</a></span>
+            </li>
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <span><small>E-mail</small><a href="mailto:contact@eclatpro.fr">contact@eclatpro.fr</a></span>
+            </li>
+            <li>
+              <span class="contact__icon contact__icon--wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></span>
+              <span><small>WhatsApp</small><a href="https://wa.me/33100000000" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a></span>
+            </li>
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <span><small>Adresse</small>12 rue de la Propreté, 75000 Paris</span>
+            </li>
+            <li>
+              <span class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <span><small>Horaires</small>Lundi – samedi : 7 h – 20 h</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form js-form reveal" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="nom">Nom complet *</label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="tel">Téléphone *</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" required pattern="[0-9 +().-]{8,}">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="societe">Société</label>
+              <input id="societe" name="societe" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="type">Type de prestation</label>
+              <select id="type" name="type">
+                <option>Bureaux &amp; entreprises</option>
+                <option>Particuliers</option>
+                <option>Copropriétés</option>
+                <option>Vitrerie</option>
+                <option>Fin de chantier</option>
+                <option>Commerces &amp; hôtellerie</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="surface">Surface (m²)</label>
+              <input id="surface" name="surface" type="number" min="1" inputmode="numeric" placeholder="Ex. : 120">
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Votre besoin *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Fréquence souhaitée, horaires, particularités…"></textarea>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="rgpd" required>
+            <span>J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité.</span>
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Envoyer ma demande</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pied de page ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#accueil" class="logo logo--footer">
+          <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3l3 9 9 3-9 3-3 10-3-10-9-3 9-3z" fill="currentColor"/></svg></span>
+          <span class="logo__text">Éclat<span>Pro</span><small>Nettoyage professionnel</small></span>
+        </a>
+        <p class="footer__about">Entreprise de propreté au service des entreprises, copropriétés et particuliers en Île-de-France depuis 2010.</p>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="#services">Nettoyage de bureaux</a></li>
+          <li><a href="#services">Ménage à domicile</a></li>
+          <li><a href="#services">Copropriétés</a></li>
+          <li><a href="#services">Vitrerie</a></li>
+          <li><a href="#services">Fin de chantier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#methode">Notre méthode</a></li>
+          <li><a href="#pourquoi">Pourquoi nous</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33100000000">01 00 00 00 00</a></li>
+          <li><a href="mailto:contact@eclatpro.fr">contact@eclatpro.fr</a></li>
+          <li>12 rue de la Propreté<br>75000 Paris</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Éclat Pro. Tous droits réservés. Photos : <a href="https://unsplash.com" rel="noopener" target="_blank">Unsplash</a>.</p>
+      <p><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a> · <a href="#">CGV</a></p>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp : remplacez 33100000000 par votre numéro (format international, sans + ni espaces) -->
+  <a href="https://wa.me/33100000000?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20de%20nettoyage." class="whatsapp" target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <span class="whatsapp__label">Discutons sur WhatsApp</span>
+  </a>
+
+  <a href="#accueil" class="to-top" id="toTop" aria-label="Retour en haut">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
